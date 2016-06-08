@@ -12,7 +12,35 @@
 		E698AA6E1CE660C1007A6D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA6C1CE660C1007A6D22 /* Main.storyboard */; };
 		E698AA701CE660C1007A6D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E698AA6F1CE660C1007A6D22 /* Assets.xcassets */; };
 		E698AA731CE660C1007A6D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA711CE660C1007A6D22 /* LaunchScreen.storyboard */; };
+		E698AA811CE66135007A6D22 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA801CE66135007A6D22 /* ActionViewController.swift */; };
+		E698AA841CE66135007A6D22 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA821CE66135007A6D22 /* MainInterface.storyboard */; };
+		E698AA881CE66135007A6D22 /* SubscribeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E698AA8E1CE661AA007A6D22 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = E698AA8D1CE661AA007A6D22 /* Action.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E698AA861CE66135007A6D22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E698AA5D1CE660C1007A6D22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E698AA7D1CE66135007A6D22;
+			remoteInfo = SubscribeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E698AA8C1CE66136007A6D22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E698AA881CE66135007A6D22 /* SubscribeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E698AA651CE660C1007A6D22 /* NotifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		E698AA6F1CE660C1007A6D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E698AA721CE660C1007A6D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E698AA741CE660C1007A6D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SubscribeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E698AA801CE66135007A6D22 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		E698AA831CE66135007A6D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E698AA851CE66135007A6D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E698AA8D1CE661AA007A6D22 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E698AA621CE660C1007A6D22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E698AA7B1CE66135007A6D22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E698AA671CE660C1007A6D22 /* NotifyMe */,
+				E698AA7F1CE66135007A6D22 /* SubscribeExtension */,
 				E698AA661CE660C1007A6D22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E698AA651CE660C1007A6D22 /* NotifyMe.app */,
+				E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +106,17 @@
 			path = NotifyMe;
 			sourceTree = "<group>";
 		};
+		E698AA7F1CE66135007A6D22 /* SubscribeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E698AA801CE66135007A6D22 /* ActionViewController.swift */,
+				E698AA821CE66135007A6D22 /* MainInterface.storyboard */,
+				E698AA851CE66135007A6D22 /* Info.plist */,
+				E698AA8D1CE661AA007A6D22 /* Action.js */,
+			);
+			path = SubscribeExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +127,34 @@
 				E698AA611CE660C1007A6D22 /* Sources */,
 				E698AA621CE660C1007A6D22 /* Frameworks */,
 				E698AA631CE660C1007A6D22 /* Resources */,
+				E698AA8C1CE66136007A6D22 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E698AA871CE66135007A6D22 /* PBXTargetDependency */,
 			);
 			name = NotifyMe;
 			productName = NotifyMe;
 			productReference = E698AA651CE660C1007A6D22 /* NotifyMe.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E698AA7D1CE66135007A6D22 /* SubscribeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E698AA891CE66136007A6D22 /* Build configuration list for PBXNativeTarget "SubscribeExtension" */;
+			buildPhases = (
+				E698AA7A1CE66135007A6D22 /* Sources */,
+				E698AA7B1CE66135007A6D22 /* Frameworks */,
+				E698AA7C1CE66135007A6D22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubscribeExtension;
+			productName = SubscribeExtension;
+			productReference = E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +167,9 @@
 				ORGANIZATIONNAME = Mozilla;
 				TargetAttributes = {
 					E698AA641CE660C1007A6D22 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E698AA7D1CE66135007A6D22 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -113,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				E698AA641CE660C1007A6D22 /* NotifyMe */,
+				E698AA7D1CE66135007A6D22 /* SubscribeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E698AA7C1CE66135007A6D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E698AA8E1CE661AA007A6D22 /* Action.js in Resources */,
+				E698AA841CE66135007A6D22 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E698AA7A1CE66135007A6D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E698AA811CE66135007A6D22 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E698AA871CE66135007A6D22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E698AA7D1CE66135007A6D22 /* SubscribeExtension */;
+			targetProxy = E698AA861CE66135007A6D22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E698AA6C1CE660C1007A6D22 /* Main.storyboard */ = {
@@ -157,6 +258,14 @@
 				E698AA721CE660C1007A6D22 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E698AA821CE66135007A6D22 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E698AA831CE66135007A6D22 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NotifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe;
@@ -262,10 +372,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NotifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E698AA8A1CE66136007A6D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SubscribeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe.SubscribeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E698AA8B1CE66136007A6D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SubscribeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe.SubscribeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -286,6 +419,14 @@
 			buildConfigurations = (
 				E698AA781CE660C1007A6D22 /* Debug */,
 				E698AA791CE660C1007A6D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E698AA891CE66136007A6D22 /* Build configuration list for PBXNativeTarget "SubscribeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E698AA8A1CE66136007A6D22 /* Debug */,
+				E698AA8B1CE66136007A6D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
