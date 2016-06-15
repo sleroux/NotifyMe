@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E606A87A1D105A4200BAE743 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E662CD3F1D0B6A6500AA8523 /* Result.framework */; };
+		E606A87B1D105A4200BAE743 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EE03171D0B58A70007598E /* Deferred.framework */; };
+		E606A87C1D105A4200BAE743 /* Muon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69309BA1D0A0B7000C46C6A /* Muon.framework */; };
+		E606A8801D1066D400BAE743 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606A87F1D1066D400BAE743 /* SubscriptionModel.swift */; };
+		E606A8821D10696600BAE743 /* SubscriptionModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606A8811D10696600BAE743 /* SubscriptionModelTest.swift */; };
+		E662CD401D0B6A6500AA8523 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E662CD3F1D0B6A6500AA8523 /* Result.framework */; };
 		E698AA691CE660C1007A6D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA681CE660C1007A6D22 /* AppDelegate.swift */; };
-		E698AA6B1CE660C1007A6D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA6A1CE660C1007A6D22 /* ViewController.swift */; };
+		E698AA6B1CE660C1007A6D22 /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA6A1CE660C1007A6D22 /* SubscriptionListViewController.swift */; };
 		E698AA6E1CE660C1007A6D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA6C1CE660C1007A6D22 /* Main.storyboard */; };
 		E698AA701CE660C1007A6D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E698AA6F1CE660C1007A6D22 /* Assets.xcassets */; };
 		E698AA731CE660C1007A6D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA711CE660C1007A6D22 /* LaunchScreen.storyboard */; };
-		E698AA811CE66135007A6D22 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA801CE66135007A6D22 /* ActionViewController.swift */; };
+		E698AA811CE66135007A6D22 /* SubscriptionConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698AA801CE66135007A6D22 /* SubscriptionConfigViewController.swift */; };
 		E698AA841CE66135007A6D22 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E698AA821CE66135007A6D22 /* MainInterface.storyboard */; };
 		E698AA881CE66135007A6D22 /* SubscribeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E698AA8E1CE661AA007A6D22 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = E698AA8D1CE661AA007A6D22 /* Action.js */; };
+		E6DCC5F01D0B1CC3005FE033 /* KnownSitesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCC5EF1D0B1CC3005FE033 /* KnownSitesTests.swift */; };
+		E6DCC5F11D0B1CD0005FE033 /* KnownSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCC5DE1D0B198F005FE033 /* KnownSites.swift */; };
+		E6DCC5FA1D0B309D005FE033 /* FeedFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCC5F91D0B309D005FE033 /* FeedFetcherTests.swift */; };
+		E6E7ABDE1D0B793B005F2CBA /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7ABDD1D0B793B005F2CBA /* SubscriptionManager.swift */; };
+		E6E7ABE01D0B7991005F2CBA /* SubscriptionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7ABDF1D0B7991005F2CBA /* SubscriptionManagerTests.swift */; };
+		E6EE03101D0B4EBF0007598E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E6EE030F1D0B4EBF0007598E /* Cartfile */; };
+		E6EE03111D0B543F0007598E /* Muon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69309BA1D0A0B7000C46C6A /* Muon.framework */; };
+		E6EE03161D0B55090007598E /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE03151D0B55090007598E /* FeedFetcher.swift */; };
+		E6EE03181D0B58A70007598E /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EE03171D0B58A70007598E /* Deferred.framework */; };
+		E6EE03241D0B5A4D0007598E /* DeferredUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE03231D0B5A4D0007598E /* DeferredUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E698AA7D1CE66135007A6D22;
 			remoteInfo = SubscribeExtension;
+		};
+		E6DCC5E91D0B1C9A005FE033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E698AA5D1CE660C1007A6D22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E698AA641CE660C1007A6D22;
+			remoteInfo = NotifyMe;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,18 +66,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E606A87F1D1066D400BAE743 /* SubscriptionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
+		E606A8811D10696600BAE743 /* SubscriptionModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionModelTest.swift; sourceTree = "<group>"; };
+		E662CD3F1D0B6A6500AA8523 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E69309BA1D0A0B7000C46C6A /* Muon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Muon.framework; path = Carthage/Build/iOS/Muon.framework; sourceTree = "<group>"; };
 		E698AA651CE660C1007A6D22 /* NotifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E698AA681CE660C1007A6D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E698AA6A1CE660C1007A6D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E698AA6A1CE660C1007A6D22 /* SubscriptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListViewController.swift; sourceTree = "<group>"; };
 		E698AA6D1CE660C1007A6D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E698AA6F1CE660C1007A6D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E698AA721CE660C1007A6D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E698AA741CE660C1007A6D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SubscribeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E698AA801CE66135007A6D22 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		E698AA801CE66135007A6D22 /* SubscriptionConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionConfigViewController.swift; sourceTree = "<group>"; };
 		E698AA831CE66135007A6D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E698AA851CE66135007A6D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E698AA8D1CE661AA007A6D22 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		E6DCC5DE1D0B198F005FE033 /* KnownSites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KnownSites.swift; path = ../SubscribeExtension/KnownSites.swift; sourceTree = "<group>"; };
+		E6DCC5E41D0B1C99005FE033 /* NotifyMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifyMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DCC5E81D0B1C9A005FE033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DCC5EF1D0B1CC3005FE033 /* KnownSitesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownSitesTests.swift; sourceTree = "<group>"; };
+		E6DCC5F91D0B309D005FE033 /* FeedFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcherTests.swift; sourceTree = "<group>"; };
+		E6E7ABDD1D0B793B005F2CBA /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		E6E7ABDF1D0B7991005F2CBA /* SubscriptionManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionManagerTests.swift; sourceTree = "<group>"; };
+		E6EE030F1D0B4EBF0007598E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		E6EE03151D0B55090007598E /* FeedFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcher.swift; sourceTree = "<group>"; };
+		E6EE03171D0B58A70007598E /* Deferred.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Deferred.framework; path = Carthage/Build/iOS/Deferred.framework; sourceTree = "<group>"; };
+		E6EE03231D0B5A4D0007598E /* DeferredUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E662CD401D0B6A6500AA8523 /* Result.framework in Frameworks */,
+				E6EE03181D0B58A70007598E /* Deferred.framework in Frameworks */,
+				E6EE03111D0B543F0007598E /* Muon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,14 +113,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6DCC5E11D0B1C99005FE033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E606A87A1D105A4200BAE743 /* Result.framework in Frameworks */,
+				E606A87B1D105A4200BAE743 /* Deferred.framework in Frameworks */,
+				E606A87C1D105A4200BAE743 /* Muon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E698AA5C1CE660C1007A6D22 = {
 			isa = PBXGroup;
 			children = (
+				E6EE030F1D0B4EBF0007598E /* Cartfile */,
+				E6EE030E1D0B4E8D0007598E /* Dependencies */,
 				E698AA671CE660C1007A6D22 /* NotifyMe */,
 				E698AA7F1CE66135007A6D22 /* SubscribeExtension */,
+				E6DCC5E51D0B1C9A005FE033 /* NotifyMeTests */,
 				E698AA661CE660C1007A6D22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +143,7 @@
 			children = (
 				E698AA651CE660C1007A6D22 /* NotifyMe.app */,
 				E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */,
+				E6DCC5E41D0B1C99005FE033 /* NotifyMeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,12 +151,15 @@
 		E698AA671CE660C1007A6D22 /* NotifyMe */ = {
 			isa = PBXGroup;
 			children = (
-				E698AA681CE660C1007A6D22 /* AppDelegate.swift */,
-				E698AA6A1CE660C1007A6D22 /* ViewController.swift */,
-				E698AA6C1CE660C1007A6D22 /* Main.storyboard */,
-				E698AA6F1CE660C1007A6D22 /* Assets.xcassets */,
-				E698AA711CE660C1007A6D22 /* LaunchScreen.storyboard */,
-				E698AA741CE660C1007A6D22 /* Info.plist */,
+				E6DCC5F41D0B1D05005FE033 /* App */,
+				E6DCC5F31D0B1CFA005FE033 /* Assets */,
+				E6DCC5F21D0B1CEA005FE033 /* Storyboards */,
+				E6EE03231D0B5A4D0007598E /* DeferredUtils.swift */,
+				E698AA6A1CE660C1007A6D22 /* SubscriptionListViewController.swift */,
+				E6DCC5DE1D0B198F005FE033 /* KnownSites.swift */,
+				E6EE03151D0B55090007598E /* FeedFetcher.swift */,
+				E6E7ABDD1D0B793B005F2CBA /* SubscriptionManager.swift */,
+				E606A87F1D1066D400BAE743 /* SubscriptionModel.swift */,
 			);
 			path = NotifyMe;
 			sourceTree = "<group>";
@@ -109,12 +167,60 @@
 		E698AA7F1CE66135007A6D22 /* SubscribeExtension */ = {
 			isa = PBXGroup;
 			children = (
-				E698AA801CE66135007A6D22 /* ActionViewController.swift */,
-				E698AA821CE66135007A6D22 /* MainInterface.storyboard */,
 				E698AA851CE66135007A6D22 /* Info.plist */,
+				E698AA801CE66135007A6D22 /* SubscriptionConfigViewController.swift */,
+				E698AA821CE66135007A6D22 /* MainInterface.storyboard */,
 				E698AA8D1CE661AA007A6D22 /* Action.js */,
 			);
 			path = SubscribeExtension;
+			sourceTree = "<group>";
+		};
+		E6DCC5E51D0B1C9A005FE033 /* NotifyMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6DCC5E81D0B1C9A005FE033 /* Info.plist */,
+				E6DCC5EF1D0B1CC3005FE033 /* KnownSitesTests.swift */,
+				E6DCC5F91D0B309D005FE033 /* FeedFetcherTests.swift */,
+				E6E7ABDF1D0B7991005F2CBA /* SubscriptionManagerTests.swift */,
+				E606A8811D10696600BAE743 /* SubscriptionModelTest.swift */,
+			);
+			path = NotifyMeTests;
+			sourceTree = "<group>";
+		};
+		E6DCC5F21D0B1CEA005FE033 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E698AA6C1CE660C1007A6D22 /* Main.storyboard */,
+				E698AA711CE660C1007A6D22 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E6DCC5F31D0B1CFA005FE033 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E698AA6F1CE660C1007A6D22 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E6DCC5F41D0B1D05005FE033 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E698AA741CE660C1007A6D22 /* Info.plist */,
+				E698AA681CE660C1007A6D22 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E6EE030E1D0B4E8D0007598E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				E662CD3F1D0B6A6500AA8523 /* Result.framework */,
+				E6EE03171D0B58A70007598E /* Deferred.framework */,
+				E69309BA1D0A0B7000C46C6A /* Muon.framework */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +234,7 @@
 				E698AA621CE660C1007A6D22 /* Frameworks */,
 				E698AA631CE660C1007A6D22 /* Resources */,
 				E698AA8C1CE66136007A6D22 /* Embed App Extensions */,
+				E6EE03141D0B545D0007598E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -156,6 +263,24 @@
 			productReference = E698AA7E1CE66135007A6D22 /* SubscribeExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E6DCC5E31D0B1C99005FE033 /* NotifyMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6DCC5EB1D0B1C9A005FE033 /* Build configuration list for PBXNativeTarget "NotifyMeTests" */;
+			buildPhases = (
+				E6DCC5E01D0B1C99005FE033 /* Sources */,
+				E6DCC5E11D0B1C99005FE033 /* Frameworks */,
+				E6DCC5E21D0B1C99005FE033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6DCC5EA1D0B1C9A005FE033 /* PBXTargetDependency */,
+			);
+			name = NotifyMeTests;
+			productName = NotifyMeTests;
+			productReference = E6DCC5E41D0B1C99005FE033 /* NotifyMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,9 +293,16 @@
 				TargetAttributes = {
 					E698AA641CE660C1007A6D22 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					E698AA7D1CE66135007A6D22 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					E6DCC5E31D0B1C99005FE033 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = E698AA641CE660C1007A6D22;
 					};
 				};
 			};
@@ -189,6 +321,7 @@
 			targets = (
 				E698AA641CE660C1007A6D22 /* NotifyMe */,
 				E698AA7D1CE66135007A6D22 /* SubscribeExtension */,
+				E6DCC5E31D0B1C99005FE033 /* NotifyMeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +333,7 @@
 			files = (
 				E698AA731CE660C1007A6D22 /* LaunchScreen.storyboard in Resources */,
 				E698AA701CE660C1007A6D22 /* Assets.xcassets in Resources */,
+				E6EE03101D0B4EBF0007598E /* Cartfile in Resources */,
 				E698AA6E1CE660C1007A6D22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,14 +347,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6DCC5E21D0B1C99005FE033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6EE03141D0B545D0007598E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Muon.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Deferred.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E698AA611CE660C1007A6D22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E698AA6B1CE660C1007A6D22 /* ViewController.swift in Sources */,
+				E606A8801D1066D400BAE743 /* SubscriptionModel.swift in Sources */,
+				E6DCC5F11D0B1CD0005FE033 /* KnownSites.swift in Sources */,
+				E6EE03241D0B5A4D0007598E /* DeferredUtils.swift in Sources */,
+				E6E7ABDE1D0B793B005F2CBA /* SubscriptionManager.swift in Sources */,
+				E6EE03161D0B55090007598E /* FeedFetcher.swift in Sources */,
+				E698AA6B1CE660C1007A6D22 /* SubscriptionListViewController.swift in Sources */,
 				E698AA691CE660C1007A6D22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +394,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E698AA811CE66135007A6D22 /* ActionViewController.swift in Sources */,
+				E698AA811CE66135007A6D22 /* SubscriptionConfigViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DCC5E01D0B1C99005FE033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E606A8821D10696600BAE743 /* SubscriptionModelTest.swift in Sources */,
+				E6DCC5FA1D0B309D005FE033 /* FeedFetcherTests.swift in Sources */,
+				E6E7ABE01D0B7991005F2CBA /* SubscriptionManagerTests.swift in Sources */,
+				E6DCC5F01D0B1CC3005FE033 /* KnownSitesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +416,11 @@
 			isa = PBXTargetDependency;
 			target = E698AA7D1CE66135007A6D22 /* SubscribeExtension */;
 			targetProxy = E698AA861CE66135007A6D22 /* PBXContainerItemProxy */;
+		};
+		E6DCC5EA1D0B1C9A005FE033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E698AA641CE660C1007A6D22 /* NotifyMe */;
+			targetProxy = E6DCC5E91D0B1C9A005FE033 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,10 +542,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NotifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -373,32 +559,81 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NotifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E698AA8A1CE66136007A6D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SubscribeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe.SubscribeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E698AA8B1CE66136007A6D22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SubscribeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sleroux.NotifyMe.SubscribeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E6DCC5EC1D0B1C9A005FE033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NotifyMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mozilla.ios.NotifyMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotifyMe.app/NotifyMe";
+			};
+			name = Debug;
+		};
+		E6DCC5ED1D0B1C9A005FE033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NotifyMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mozilla.ios.NotifyMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotifyMe.app/NotifyMe";
 			};
 			name = Release;
 		};
@@ -421,6 +656,7 @@
 				E698AA791CE660C1007A6D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E698AA891CE66136007A6D22 /* Build configuration list for PBXNativeTarget "SubscribeExtension" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +665,16 @@
 				E698AA8B1CE66136007A6D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DCC5EB1D0B1C9A005FE033 /* Build configuration list for PBXNativeTarget "NotifyMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DCC5EC1D0B1C9A005FE033 /* Debug */,
+				E6DCC5ED1D0B1C9A005FE033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
